@@ -1,0 +1,87 @@
+/* UpdateItemForm.css */
+
+.update-item-container {
+  padding: 20px; /* Padding around the form */
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Maximum width */
+  margin: 20px auto; /* Center the form horizontally */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Darker text for contrast */
+}
+
+ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin-bottom: 20px; /* Space below the list */
+}
+
+li {
+  padding: 10px; /* Padding around list items */
+  cursor: pointer; /* Pointer cursor for list items */
+  border: 1px solid #ddd; /* Border around items */
+  border-radius: 4px; /* Rounded corners */
+  margin: 5px 0; /* Space between items */
+  transition: background-color 0.3s; /* Smooth background change */
+}
+
+li:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+form {
+  display: flex; /* Flexbox for form layout */
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+div {
+  margin-bottom: 15px; /* Space between form elements */
+}
+
+label {
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ddd; /* Border for inputs */
+  border-radius: 4px; /* Rounded corners */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  margin-top: 10px; /* Space above buttons */
+  transition: background-color 0.3s; /* Smooth background change */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button[type="button"] {
+  background-color: #dc3545; /* Danger button color */
+}
+
+button[type="button"]:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+p {
+  color: red; /* Red text for error messages */
+  text-align: center; /* Center error messages */
+}

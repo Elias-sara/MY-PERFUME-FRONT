@@ -1,0 +1,103 @@
+/* Heading Styles */
+h1 {
+    font-size: 2rem; /* Larger font size for the main heading */
+    color: var(--primary-color); /* Use primary color for heading */
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px; /* Add space below the heading */
+    border-bottom: 2px solid var(--primary-color); /* Underline effect */
+}
+
+/* Navigation Links Styles */
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Margin around the navigation */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center links */
+    gap: 20px; /* Space between links */
+}
+
+nav ul li {
+    display: inline; /* Display links in a row */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--font-color); /* Set link color */
+    font-weight: 500; /* Medium font weight for links */
+    transition: color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    color: var(--hover-color); /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge link on hover */
+}
+
+nav ul li a:active {
+    color: var(--active-color); /* Change color on active */
+}
+
+/* Responsive Link Styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center; /* Center align links */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Margin between links */
+    }
+}
+/* Heading Styles */
+h1 {
+    font-size: 2rem; /* Larger font size for the main heading */
+    color: var(--primary-color); /* Use primary color for heading */
+    margin: 20px 0; /* Margin around the heading */
+    padding: 10px; /* Add some padding */
+    text-align: center; /* Center align the text */
+    border-bottom: 2px solid var(--primary-color); /* Underline effect */
+}
+
+/* Adjusting the overall layout if necessary */
+.main-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center all items in the container */
+}
+/* Error and Loading Styles */
+.error-message,
+.loading-message {
+    background-color: #f8d7da; /* Light red background for a soft warning look */
+    color: #721c24; /* Muted dark red text for a professional appearance */
+    border: 1px solid #f5c6cb; /* Subtle border to outline the message */
+    padding: 10px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    margin: 15px 0; /* Space around the message */
+    font-weight: 500; /* Medium font weight for readability */
+    text-align: center; /* Center the text */
+    max-width: 600px; /* Set a max-width for better readability */
+    margin-left: auto; /* Center the message horizontally */
+    margin-right: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Success Message Styles (if needed) */
+.success-message {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text for success messages */
+    border: 1px solid #c3e6cb; /* Subtle green border */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+/* Additional Responsive Adjustments */
+@media (max-width: 600px) {
+    .error-message, .loading-message, .success-message {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
+}

@@ -1,0 +1,339 @@
+.order-form-container {
+  text-align: center; /* Center the text in the container */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.order-form-container:hover {
+  transform: translateY(-3px);
+}
+
+h2 {
+  margin: 0;
+}
+
+.form-cart-card {
+  background: #fff; /* Background color for the single card */
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox for the layout */
+  justify-content: space-between; /* Space between form and cart */
+  align-items: flex-start; /* Align items at the start */
+  gap: 20px; /* Gap between the form and cart */
+  margin-top: 20px; /* Margin above the card */
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* Allow the form to take available space */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.item-list {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  gap: 15px;
+}
+
+.item-card {
+  background: #f9f9f9;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 15px;
+  min-width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-name {
+  font-size: 1.2rem;
+  color: var(--font-color);
+}
+
+.item-price {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.item-image {
+  width: 150px; /* Set width to 150px */
+  height: 150px; /* Set height to 150px */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: round corners */
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Colorful button */
+.colorful-btn {
+  background: linear-gradient(
+    45deg,
+    #ff6f61,
+    #ffcc00
+  ); /* Gradient background */
+  color: white; /* Text color */
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Margin above the button */
+}
+
+/* Cart Styles */
+.cart {
+  background-color: #fff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for less prominence */
+  flex: 1; /* Allow the cart to take available space */
+  opacity: 0.6; /* Reduced opacity for a less prominent look */
+  transition: opacity 0.3s ease; /* Transition effect for opacity */
+}
+
+.cart:hover {
+  opacity: 1; /* Restore opacity on hover */
+}
+
+.cart h3 {
+  margin-top: 0;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex; /* Use flexbox for item layout */
+  justify-content: space-between; /* Space between item name and actions */
+  align-items: center; /* Center align items vertically */
+  margin: 5px 0; /* Margin between cart items */
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 5px; /* Space between buttons */
+  align-items: center; /* Center align items vertically */
+}
+
+.cart li {
+  margin: 5px 0;
+}
+
+.adjust-btn {
+  padding: 3px 5px; /* Reduced padding for smaller buttons */
+  font-size: 0.7rem; /* Smaller font size */
+  border-radius: 4px; /* Keep the rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Transition effect */
+}
+
+.adjust-btn:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+.remove-btn {
+  padding: 3px 5px; /* Reduced padding for remove button */
+  font-size: 0.7rem; /* Smaller font size */
+  border-radius: 4px; /* Keep the rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Transition effect */
+}
+
+.remove-btn:hover {
+  background: #c82333; /* Darker red on hover */
+}
+/* Other existing styles remain unchanged */
+
+.cart-item {
+  display: flex; /* Use flexbox for item layout */
+  justify-content: space-between; /* Space between item name and actions */
+  align-items: center; /* Center align items vertically */
+  margin: 5px 0; /* Margin between cart items */
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 5px; /* Space between buttons */
+  align-items: center; /* Center align items vertically */
+}
+
+.adjust-btn {
+  padding: 3px 5px; /* Reduced padding for smaller buttons */
+  font-size: 0.7rem; /* Smaller font size */
+  border-radius: 4px; /* Keep the rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Transition effect */
+}
+
+.remove-btn {
+  padding: 3px 5px; /* Reduced padding for remove button */
+  font-size: 0.7rem; /* Smaller font size */
+  border-radius: 4px; /* Keep the rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Transition effect */
+}
+.adjust-btn {
+  padding: 2px 4px; /* Further reduced padding for smaller buttons */
+  font-size: 0.6rem; /* Smaller font size for buttons */
+  border-radius: 3px; /* Slightly smaller border radius */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Transition effect */
+}
+
+.remove-btn {
+  padding: 2px 4px; /* Further reduced padding for remove button */
+  font-size: 0.6rem; /* Smaller font size for buttons */
+  border-radius: 3px; /* Slightly smaller border radius */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease; /* Transition effect */
+}
+.cart-title {
+    text-align: center; /* Center align the cart title */
+    margin-bottom: 10px; /* Margin below the title */
+}
+
+.cart {
+    background-color: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for less prominence */
+    flex: 1; /* Allow the cart to take available space */
+    opacity: 0.6; /* Reduced opacity for a less prominent look */
+    transition: opacity 0.3s ease; /* Transition effect for opacity */
+}
+
+.cart:hover {
+    opacity: 1; /* Restore opacity on hover */
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex; /* Use flexbox for item layout */
+    justify-content: space-between; /* Space between item name and actions */
+    align-items: center; /* Center align items vertically */
+    margin: 3px 0; /* Smaller margin between cart items */
+}
+
+.cart-item-actions {
+    display: flex;
+    gap: 3px; /* Reduced space between buttons */
+    align-items: center; /* Center align items vertically */
+}
+
+.cart-total {
+    text-align: right; /* Align the total to the right */
+    margin-top: 10px; /* Margin above the total */
+    font-weight: bold; /* Make total bold for emphasis */
+}
+
+.order-form-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the order form */
+}
+
+.order-form-content h2 {
+  margin: 20px 0; /* Optional: Add margin for spacing */
+  font-size: 2em; /* Adjust font size as needed */
+}
+.form-cart-card {
+    display: flex; /* Align form and cart side by side */
+    justify-content: space-between; /* Space between the form and cart */
+    margin-top: 20px; /* Space above form and cart */
+}
+.error-message {
+  color: red; /* Change this to your preferred color */
+  font-size: 0.8em; /* Adjust the size as needed */
+  margin-top: 5px; /* Add space above the message */
+}
+/* Error and Loading Styles */
+.error-message,
+.loading-message {
+    background-color: #f0f4f8; /* Soft light blue background */
+    color: #2c3e50; /* Darker blue-gray text for a professional tone */
+    border: 1px solid #d1d5db; /* Subtle border for outlining the message */
+    padding: 12px; /* Padding for better spacing */
+    border-radius: 6px; /* Rounded corners for a smoother look */
+    margin: 15px 0; /* Space around the message */
+    font-size: 0.9em; /* Adjusted font size for readability */
+    font-weight: 500; /* Medium font weight */
+    text-align: center; /* Center the text */
+    max-width: 600px; /* Limit width for better readability */
+    margin-left: auto; /* Center the message horizontally */
+    margin-right: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for error and loading messages */
+.error-message:hover,
+.loading-message:hover {
+    background-color: #e8f0fa; /* Slightly darker blue on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+/* Success Message Styles */
+.success-message {
+    background-color: #dff9db; /* Soft green background */
+    color: #2c662d; /* Dark green text for success messages */
+    border: 1px solid #c6e6c9; /* Subtle green border */
+    padding: 12px;
+    border-radius: 6px;
+    margin: 15px 0;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Additional Responsive Adjustments */
+@media (max-width: 600px) {
+    .error-message, .loading-message, .success-message {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
+}
